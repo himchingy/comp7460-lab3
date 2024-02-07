@@ -10,7 +10,7 @@ def main():
 	config.read('config.ini')
 	updater = Updater(token = (config['TELEGRAM']['ACCESS_TOKEN']), use_context = True)
 	dispatcher = updater.dispatcher
-	# You can set this logging module, so you will know when and why things do not work a
+	# You can set this logging module, so you will know when and why things do not work as expected. Meanwhile, update your config.ini as:
 	logging.basicConfig(format = '%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
 	# register a dispatcher to handle message: here we register an echo dispatcher
